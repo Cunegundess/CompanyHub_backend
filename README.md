@@ -21,23 +21,16 @@
     <li>
       <a href="#About-the-Project">About the Project</a>
         <ul>
-
-[//]: # (          <li>)
-
-[//]: # (            <a href="#getting-started">Getting Started</a>)
-
-[//]: # (          <li><a href="#Installation">Installation</a></li>)
+          <li><a href="#Installation">Installation</a></li>
           <li><a href="#Usage">Usage</a></li>
     </li>
         <li><a href="#Technologies">Technologies</a></li>
+        <li><a href="#Dependencies">Dependencies</a></li>
       </ul>
     </li>
     <li><a href="#Contact">Contact</a></li>
   </ol>
 </details>
-</br>
-
-<!-- Sobre o Projeto -->
 
 <a id="About-the-Project"></a>
 # About the Project 📜
@@ -54,65 +47,69 @@ Whether you're a startup striving for growth, a mid-sized company aiming for eff
 
 </br>
 
+<a id="Installation"></a>
 
-[//]: # (<a id="Getting-Started"></a>)
+## Installation
 
-[//]: # (# Getting Started 🏁)
 
-[//]: # (<a id="Installation"></a>)
+To run the CompanyHub Backend locally, follow these steps:
 
-[//]: # (## Installation)
 
-[//]: # ()
-[//]: # (To install and run this project, follow these steps:)
+   
+1.  Clone the repository:
 
-[//]: # ()
-[//]: # (   )
-[//]: # (1.  Clone the repository:)
 
-[//]: # ()
-[//]: # (    `git clone https://github.com/Cunegundess/CompanyHub.git`)
+    git clone https://github.com/Cunegundess/CompanyHub_backend.git
 
-[//]: # ()
-[//]: # (3.  Go to the project directory:)
 
-[//]: # ()
-[//]: # (    `cd CompanyHub`)
+3.  Go to the project directory:
 
-[//]: # ()
-[//]: # (4.  Install the dependencies:)
 
-[//]: # ()
-[//]: # (    `npm install`)
+    cd CompanyHub_backend
 
-[//]: # ()
-[//]: # (5.  Run the development server:)
 
-[//]: # ()
-[//]: # (    `npm run dev`)
+4.  Build and run the project:
 
-[//]: # ()
-[//]: # (6.  Open [http://localhost:5173]&#40;http://localhost:5173/&#41; in your browser to see the dashboard.)
 
-[//]: # ()
-[//]: # (</br>)
+    ./mvnw spring-boot:run
+
+The backend server will start running at http://localhost:8080.
+</br>
 
 <a id="Usage"></a>
 ## Usage
 
-The dashboard displays some information about clients and documentation about the clients activity.
+The backend provides APIs to support the CompanyHub web app. 
+It manages data related to clients and documentation, 
+allowing users to view client information and activity 
+documentation. The data is presented in the web app's dashboard,
+and users can navigate to the 'Clientes' and 'Docs' 
+sections through the top navigation bar.
 
-You can navigate to the 'Clientes' and 'Docs' sections through the navbar at the top of the page.
 
-
-</br>
 
 <a id="Technologies"></a>
 # Technologies 🧑🏻‍💻
 
-- <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" /> 
-- <img src="https://img.shields.io/badge/Java-FFA500?style=for-the-badge&logo=java&logoColor=white" />
+The CompanyHub Backend is built using the following technologies:
 
+<img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" /> <img src="https://img.shields.io/badge/Java-FFA500?style=for-the-badge&logo=java&logoColor=white" /> <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" />
+
+- Java and Spring Boot: The foundation of the backend logic.
+- RESTful APIs: For communication with the CompanyHub web app.
+- Database: Integrates with a PostgreSQL database to store and retrieve data.
+
+<a id="Dependencies"></a>
+## Dependencies
+
+The backend relies on the following dependencies:
+
+- `spring-boot-starter-data-jpa`: Provides JPA support for data access.
+- `spring-boot-starter-web`: Enables Spring Web MVC for RESTful endpoints.
+- `spring-boot-devtools`: Offers development tools for an improved development experience.
+- `postgresql`: Provides runtime support for PostgreSQL database.
+- `lombok`: Enhances code readability with annotations to avoid boilerplate code.
+- `spring-boot-starter-test`: Includes testing dependencies for unit and integration testing.
 
 </br>
 
