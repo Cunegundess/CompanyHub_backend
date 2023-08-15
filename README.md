@@ -59,19 +59,19 @@ To run the CompanyHub Backend locally, follow these steps:
 1.  Clone the repository:
 
 
-    git clone https://github.com/Cunegundess/CompanyHub_backend.git
+    `git clone https://github.com/Cunegundess/CompanyHub_backend.git`
 
 
 3.  Go to the project directory:
 
 
-    cd CompanyHub_backend
+    `cd CompanyHub_backend`
 
 
 4.  Build and run the project:
 
 
-    ./mvnw spring-boot:run
+    `./mvnw spring-boot:run`
 
 The backend server will start running at http://localhost:8080.
 </br>
