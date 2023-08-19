@@ -2,7 +2,6 @@ package com.example.CompanyHub_backend.models;
 
 import jakarta.persistence.*;
 import lombok.Data;
-
 import java.sql.Date;
 
 @Table(name = "Empresa_Doc", schema = "public")

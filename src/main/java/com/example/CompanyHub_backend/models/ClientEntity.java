@@ -22,9 +22,9 @@ public class ClientEntity {
     @Temporal(TemporalType.DATE)
     private Date dataRegistro;
     private String logoUrl;
-    @OneToMany(mappedBy = "ClientEntity")
+    @OneToMany(mappedBy = "empresaCliente")
     private List<DocEntity> empresaDocs = new ArrayList<>();
 
-    @OneToMany(mappedBy = "ClientEntity")
+    @OneToMany(mappedBy = "empresaCliente")
     private List<LocationEntity> empresaLocations = new ArrayList<>();
 }

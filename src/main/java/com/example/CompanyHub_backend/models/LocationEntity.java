@@ -7,6 +7,7 @@ import lombok.Data;
 @Entity(name = "Empresa_Filial")
 @Data
 public class LocationEntity {
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String local;
     @Column(unique = true)
